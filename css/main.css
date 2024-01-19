@@ -1,0 +1,59 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body text */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: radial-gradient(circle, hsl(0, 0%, 96%), hsl(204, 64%, 44%));
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Call-to-action container */
+.cta {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: min(400px,100%);
+  text-align: justify;
+  padding: 50px 30px 30px 30px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 20px;
+  background-color: hsl(238, 57%, 9%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+/* Call to Action "button" */
+.cta a, .cta a:visited {
+  background-color: hsl(6, 78%, 57%);
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  text-decoration: none;
+  box-shadow:  0 4px 8px hsla(0, 0%, 0%, 0.1);
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+/* Hover state */
+.cta a:hover {
+  background-color: hsla(6, 78%, 57%, 0.6);
+  text-decoration: underline;
+}
+
+/* Click state */
+.cta a:active {
+  background-color: hsl(120, 81%, 47%);
+}
